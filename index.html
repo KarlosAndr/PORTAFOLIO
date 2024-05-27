@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../Images/icono.ico" type="Image/.ico">
+</head>
+<body>
+    <div class="section" id="container">
+        <div class="overlay1"></div>
+        <div class="linea-laterales"></div>
+        <div class=" lateral2"></div>
+        <div class="divisor-pagina1">
+        
+            <nav clas="nav">
+            
+                    <ul class="ul-item"><a href="#" class="link-item">Inicio</a><a href="#Sobre-mi" class="link-item">Sobre Mí</a><a href="#Educacion" class="link-item">Educación</a><a href="#Experiencia" class="link-item">Experiencia</a><a href="#Proyectos" class="link-item">Proyectos</a><a href="#Contacto" class="link-item contacto-link">Contácto</a></ul>
+            
+            </nav>
+            <div class="portafolio">
+                <strong>PORTAFOLIO</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="divisor"></div>
+
+    <div class="section" id="Sobre-mi">
+        <div class="overlay3"></div>
+        <div class="linea-laterales">
+        </div>
+        <div >
+            <img class="imagen" src="../Images/me.jpeg" alt="">
+            <div class="about">
+                
+                <article><h3>SOBRE MÍ</h3>Hola! Soy Carlos Andrés, estudiante de ingeniería en informática con una pasión por la ciberseguridad. Actualmente estoy aprendiendo sobre desarrollo y diseño web, y dedico mi tiempo libre a explorar el fascinante mundo de la criptografía a través de la lectura y la práctica.  </article>
+            </div>
+        </div>
+        <div class="volver">
+            <img class="flecha" src="../Images/A.png" >
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const flecha = document.getElementsByClassName('flecha')[0];
+        
+            flecha.addEventListener('click', function() {
+                const container = document.getElementById('container');
+                container.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+
+        </script>
+
+    <div class="divisor"></div>
+
+    <div class="section" id="Educacion">
+        <div class="overlay2"></div>
+        <div class="linea-laterales"></div>
+        <div class="divisor-educacion">
+            <article>
+                <h3>EDUCACIÓN</h3>
+                <strong>ingeniería en informática</strong>
+                <br>
+                <br>
+                Universidad Fundación Universitaria Internacional de la Rioja (Enero 2020 - 2024)
+
+                Hola! Soy Carlos Andrés, estudiante de ingeniería en informática con una pasión por la ciberseguridad. Actualmente estoy aprendiendo sobre desarrollo y diseño web, y dedico mi tiempo libre a explorar el fascinante mundo de la criptografía a través de la lectura y la práctica. 
+            </article>
+            <div class="blocke-imagen">
+                <img class="imagen-unir" src="../Images/unir.png" alt="">
+                <img class="imagen-libros" src="../Images/libros.avif" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="divisor"></div>
+
+    <div class="section" id="Experiencia">
+        <div class="overlay3"></div>
+        <div class="linea-laterales"></div>
+        <div class="blocke-image">
+            <img src="../Images/codign.avif" alt="codding" class="codding">
+            <div class="Experiencia-parrafo">
+                <article>
+                    <h3>Experiencia</h3>
+                    <strong>Autoestudio y Proyectos Personales (2020 - Presente)
+                    </strong> <br>
+                    Durante mi tiempo como estudiante he adquirido experiencia a través de estudios autodidactas y proyectos personales, incluyendo:
+                    Análisis extensivo de código en ciberseguridad, desarrollo web y Python; desarrollo y despliegue de juegos en Python; exploración inicial en data science con análisis de datos y visualización básica.
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="divisor"></div>
+
+    <div class="section" id="Proyectos">
+        <div class="overlay2"></div>
+        <div class="linea-laterales"></div>
+        <div class="blocke-proyecto">
+            <h3>PROYECTOS</h3>
+            <h5>Un proyecto interesante en python</h5>
+            <h6>Crazy Banana
+            </h6>
+            <article>
+                Este juego implementa una escena interactiva donde se muestran bananas que cambian a bombas al acercarse al cursor, con efectos visuales y movimientos aleatorios.
+                </article>
+            
+            <img class="imagen-banana" src="../Images/banana-crazy.png" alt="">
+            <a class="botom-enviar" href="">Ver Código en GitHub</a>
+        </div>
+        
+    </div>
+    <div class="divisor"></div>
+
+
+    <div class="section" id="CONTACTO">
+        <div class="overlay3"></div>
+        <div class="linea-laterales"></div>
+        <div class="blocke-contact">
+            <h1 class="titulo-contacto">CONTÁCTAME</h1>
+            <form class="formulario" action="https://formspree.io/f/mqkroybv" method="post">
+                <label for="Nombre">Nombre|Empresa:</label>
+                <input id="Nombre" type="text" name="Nombre|Empresa" required>
+                <label for="Correo">Correo Electrónico:</label>
+                <input type="email" id="Correo" name="Email" required>
+                <label for="Mensaje" >Mensaje:</label>
+                <textarea name="Mensaje" id="Mensaje" required></textarea>
+                
+                <button class="Enviar" type="submit">Enviar</button>
+            </form>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
