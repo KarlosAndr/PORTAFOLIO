@@ -211,6 +211,7 @@ body{
     z-index: 1000; 
 }
 .flecha {
+    z-index: 999;
     width: 30px;
     height: 30px;
     border-radius: 10px;
@@ -354,7 +355,7 @@ body{
     position: relative;
     top: 50px;
     height: 100vh;
-    z-index: 10000;
+    z-index: 100;
 }
 .titulo-contacto{
     text-align: center;
@@ -403,15 +404,23 @@ input,textarea{
     background-color:#ffe9d3;
     color: black;
     display: flex;
+    
+    
+}
+.amor{
+    margin-top: 3vh;
+    margin-left: 10vw;
 }
 .firma{
     width: 20vw;
     height: 20vh;
     flex-grow: 1;
-    margin-top: 30px;
+    margin-left: 3vw;
+
 }
 .pie p{
-    margin-top: 10px;
+    
+    margin-top: 3vh;
     font-family:Lobster;
     margin-left: 20vw;
     width:400px;
@@ -420,3 +429,8 @@ input,textarea{
 .info{
     border-bottom: 2px solid black;
 }
+
+.parrafito{
+    margin-left: 5vw;
+}
+
