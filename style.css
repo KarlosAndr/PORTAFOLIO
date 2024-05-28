@@ -141,7 +141,8 @@ body{
     }
     .section .blocke-about img {
         height: 35vh;
-        margin-top: 30vh;
+        width: 30vw;
+        margin-top: 25vh;
     }
     .blocke-imagen img{
         margin-top: 20px;
@@ -169,8 +170,8 @@ body{
     z-index: 20;
 }
 .imagen{
-    width: 30vw;
-    height: 60vh;
+    width: 25vw;
+    height: 55vh;
     border-radius:50%;
     margin: 100px auto;
     margin-left: 50px;
@@ -231,7 +232,7 @@ body{
 .divisor-educacion article{
     position: relative;
     width: 50%;
-    top: 40px;
+    top: 90px;
     left: 30px;
     line-height: 28px;
 }
@@ -276,11 +277,11 @@ body{
 .blocke-image{
     display: flex;
     position: relative;
-    top: 14%;    
+    top: 11%;    
 }
 .codding{
     width: 50vw;
-    height: 80vh;
+    height: 85vh;
 }
 
 .Experiencia-parrafo h3{
@@ -289,12 +290,14 @@ body{
 }
 
 .Experiencia-parrafo{
+
     margin-left: 25px;
     text-align: left;
 }
 
 .Experiencia-parrafo article{
     line-height:30px;
+    
 }
 
 .blocke-proyecto{
