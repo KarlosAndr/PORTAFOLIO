@@ -1,17 +1,23 @@
 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body{
     background-color: #001F3F;
     margin: 0;
     color: white;
-    box-sizing: border-box;
-    
 }
+
 .section{
     height: 100vh;
+    width: 100%;
 }
 .divisor-pagina1{
-    height: 100vh;
+    min-height: 100vh;
 }
+
 .divisor-pagina1:hover .portafolio{
     margin: 0;
     font-size: 50px;
@@ -36,6 +42,14 @@ body{
     z-index: -1;
     box-shadow: 0 0 300px 100px #423B3B;
 }
+.overlay4{
+    position: absolute;
+    width: 100%;
+    margin-top: 30vh;
+    box-shadow: 0 0 40px 23px black;
+    z-index: 0;
+}
+
 .linea-laterales{
     position: absolute;
     border-bottom: 1px solid white;
@@ -114,27 +128,53 @@ body{
     .contacto-link{
         margin-right: 25px;
     }   
+    .blocke-proyecto h5{
+        text-align: center;
+    }
+    .blocke-proyecto a{
+        height: 45px;
+        width: 100px;
+    }
+    .blocke-proyecto{
+        height: 100%;
+        
+    }
+    .section .blocke-about img {
+        height: 35vh;
+        margin-top: 30vh;
+    }
+    .blocke-imagen img{
+        margin-top: 20px;
+        width: 30vw;
+    }
+    .blocke-proyecto img{
+        height: 30vh;
+        
+    }
 }
 
 
 .divisor{
-    
+    box-sizing: border-box;
+    background-image: url(rays3.jpeg);
     width: 100%;
     height: 100px;
-    background-color: black;
     z-index: 20;
 }
-
-
-
+.divisor2{
+    background-image: url(rays2.jpeg);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    z-index: 20;
+}
 .imagen{
-    width: 250px;
-    height: 250px;
+    width: 30vw;
+    height: 60vh;
     border-radius:50%;
     margin: 100px auto;
-    margin-left: 10px;
+    margin-left: 50px;
     float: left;
-    flex-shrink: 1;
 }
 
 .about{
@@ -150,6 +190,8 @@ body{
 }
 
 .about article{
+    margin-left: 15px;
+    width: 90%;
     height: 100vh;
     line-height: 28px;
 }
@@ -162,6 +204,7 @@ body{
 
 .volver {
     position: fixed;
+
     top: 93vh;
     right: 10px;
     z-index: 1000; 
@@ -188,25 +231,27 @@ body{
 .divisor-educacion article{
     position: relative;
     width: 50%;
-    top: 70px;
-    left: 50px;
+    top: 40px;
+    left: 30px;
     line-height: 28px;
 }
 .divisor-educacion h3{
     font-size: 2rem;
 }
 .divisor-educacion{
+    width: 100%;
     display: flex;
 }
 .blocke-imagen{
     max-width: 300px;
+    min-width: 250;
     border-radius: 10px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
+    margin-left: 100px;
     margin-right: 5px;
-    margin-top: 70px;
+    margin-top: 150px;
     background-color: rgba(0, 166, 255, 0.272);
     height: 300px;
     box-shadow: 20px 10px 10px 2px black;
@@ -226,6 +271,8 @@ body{
 }
 
 
+
+
 .blocke-image{
     display: flex;
     position: relative;
@@ -238,7 +285,7 @@ body{
 
 .Experiencia-parrafo h3{
     font-size: 2rem;
-
+    margin: 0;
 }
 
 .Experiencia-parrafo{
@@ -282,12 +329,12 @@ body{
 
 .botom-enviar{
     margin: 20px;
-    margin-top: 25px;
+    margin-top: 20px;
     text-decoration: none;
     background-color: rgba(0, 166, 255, 0.272);
     color: white;
     width: 150px;
-    height: 25px;
+    height: 20px;
     text-align: center;
     line-height: 25px;
     border-radius: 3px;
@@ -303,6 +350,8 @@ body{
     flex-direction: column;
     position: relative;
     top: 50px;
+    height: 100vh;
+    z-index: 10000;
 }
 .titulo-contacto{
     text-align: center;
@@ -312,7 +361,8 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: grid;
     margin: auto;
-    width: 60vw;
+    margin-top: 10vh;
+    width: 40vw;
     line-height: 40px;
 
 }
@@ -326,11 +376,11 @@ input,textarea{
 .Enviar{
     margin: auto;
     margin-top: 10px;
-    width: 20%;
+    width: 30%;
     line-height: 25px;
     height: 25px;
     border-radius: 3px;
-    background-color: rgba(0, 166, 255, 0.272);
+    background-color: #00a6ff45;
     color: white;
     outline: none;
     outline-offset: 0;
@@ -340,4 +390,29 @@ input,textarea{
 .Enviar:hover{
     background-color: white;
     color: black;
+}
+
+
+.pie{
+    box-sizing: border-box;
+    min-height: 10vh;
+    width: 100%;
+    background-color:#ffe9d3;
+    color: black;
+    display: flex;
+}
+.firma{
+    width: 20vw;
+    height: 20vh;
+    flex-grow: 1;
+    margin-top: 30px;
+}
+.pie p{
+    font-family:Lobster;
+    margin-left: 20vw;
+    width:400px;
+}
+
+.info{
+    border-bottom: 2px solid black;
 }
